@@ -1,0 +1,76 @@
+body{
+  background-image: url(./imagenescuestionario/fondo2.jpg);
+  background-repeat:no-repeat;/* IDEA:para que no se repita la imagen de fondo  */
+  background-size: cover;/* IDEA: sirve para arreglar el tamaño de la imagen */
+  background-attachment: fixed;/* IDEA: sirve para que la imagen se mueva conjunto al cursor */
+}
+
+.cabecera{
+  font-size: 35px;
+  text-align: center;
+
+}
+
+.contenedor{
+  font-family:monospace;
+  width: 45%;
+  margin: auto;
+  border: 3px solid rgba(9, 105, 4, 1);
+}
+
+form{
+  background-color: rgba(227, 240, 170, 0.44);
+  font-size:20px;
+  margin: auto;
+  color: black;
+}
+
+h1{
+  font-size: 24px;
+}
+
+form input[type="submit"]{
+  background-color: rgb(255, 115, 0);
+  color: white;
+  width: 80%;
+  border-radius: 10px;
+  float: right;
+  margin-top: 15px;
+  margin-right: 50px;
+  border: none;
+  padding:8px;
+  font-weight: bold; /* IDEA: texto en negrita */
+}
+
+form input[type="reset"]{
+  background-color: rgb(255, 115, 0);
+  color: white;
+  width: 80%;
+  border-radius: 10px;
+  float: right;
+  margin-top: 15px;
+  margin-right: 50px;
+  border: none;
+  padding:8px;
+  font-weight: bold; /* IDEA: texto en negrita */
+}
+
+fieldset{
+  border-color: white;
+}
+
+a{
+  color: rgba(9, 105, 4, 1);
+  font-size: 16px;
+}
+
+form textarea{
+  max-width: 80%;
+  min-width: 80%;
+  max-height: 80px;
+  min-height: 80px;
+  margin: 8px 0px 18px 0px;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+}

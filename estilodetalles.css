@@ -1,0 +1,28 @@
+﻿body{
+  background-image: url(./imagenescuestionario/fondo4.jpg);
+  background-repeat:no-repeat;/* IDEA:para que no se repita la imagen de fondo  */
+  background-size: cover;/* IDEA: sirve para arreglar el tamaño de la imagen */
+  background-attachment: fixed;/* IDEA: sirve para que la imagen se mueva conjunto al cursor */
+  font-family:monospace;
+
+}
+
+h1{
+  font-size: 40px;
+  color: #2C2F7A;  
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 30px;  
+  text-decoration:underline;
+  color: #3E3363;
+}
+
+h3{
+  font-size: 20px;
+  font-weight: 500;
+  color:black;
+  text-align: center;
+  padding: 0;
+}

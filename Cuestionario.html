@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+  <HEAD>
+    <meta charset="utf-8">
+    <title>Cuestionario de búsqueda de hoteles</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script type="text/javascript" src="validacion.js"></script>
+  </HEAD>
+
+  <BODY>
+    <div class="contenedor">
+      <form id="cuestionario" action="correo.php" method="post"  enctype="text/plain" onsubmit="return validar();" >
+        <br><div class="cabecera">Cuestionario</div>
+        <fieldset>
+          <legend><h1>Datos del huésped</h1></legend>
+            <label for="nombre_usuario">Nombre Usuario:</label>
+            <input type="text" name="Usuario" id="nombre_usuario" pattern="[a-zA-Z]+"><a href="Detalles.html#nombre_usuario">justificación</a>
+            <br><br>
+            <label for="clave_usuario">Contraseña:</label>
+            <input type="password" name="Clave" id="clave_usuario" pattern="{4,15}"><a href="Detalles.html#contraseña">justificación</a>
+            <br><br>
+            <label for="clave_usuario2">Repetir Contraseña:</label>
+            <input type="password" name="Clave2" id="clave_usuario2"><a href="Detalles.html#contraseña2">justificación</a>
+            <br><br>
+            <label for="direccion">Dirección:</label>
+            <input type="text" name="Direccion" id="direccion" pattern="[a-zA-Z]+"><a href="Detalles.html#direccion">justificación</a>
+            <br><br>
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" name="Ciudad" id="ciudad" pattern="[a-zA-Z]+"><a href="Detalles.html#ciudad">justificación</a>
+            <br><br>
+            <label for="provincia">Provincia:</label>
+            <input type="text" name="Provincia" id="provincia" pattern="[a-zA-Z]+"><a href="Detalles.html#provincia">justificación</a>
+            <br><br>
+            <label for="numero_huéspedes">Número de Huéspedes:</label>
+            <input type="number" name="Numero" min="1" max="5" id="numero_huéspedes" pattern="[1-5]+"><a href="Detalles.html#numero_huespedes">justificación</a>
+            <br><br>
+        </fieldset>
+        <fieldset>
+          <legend><h1>Servicios <a href="Detalles.html#servicios">justificación</a></h1></legend>
+            <table cellpadding="6">
+              <tr>
+                <td>
+                  <input type="checkbox" name="Servicio" id="aire_acondicionado">
+                  <label for="aire_acondicionado">Aire Acondicionado</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="Servicio" id="almohadas">
+                  <label for="almohadas">Almohadas a la carta</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" name="Servicio" id="caja_fuerte">
+                  <label for="caja_fuerte">Caja Fuerte</label>
+                </td>
+                <td>
+                 <input type="checkbox" name="Servicio" id="detector">
+                 <label for="detector">Detector de humos</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" name="Servicio" id="minibar">
+                  <label for="minibar">Minibar</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="Servicio" id="mesa">
+                  <label for="mesa">Mesa de trabajo</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" name="Servicio" id="conexion">
+                  <label for="conexion">Conexión a Internet</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="Servicio" id="wifi">
+                  <label for="wifi">WIFI</label>
+                </td>
+              </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+          <legend><h1>Tipo de Habitación <a href="Detalles.html#tipo_habitacion">justificación</a></h1></legend>
+            <input type="radio" name="Tipo" id="individual"><label for="individual">Individual</label>
+            <br><br>
+            <input type="radio" name="Tipo" id="dobble"><label for="dobble">Doble</label>
+            <br><br>
+            <input type="radio" name="Tipo" id="suit"><label for="suit">Suit</label>
+            <br><br>
+        </fieldset>
+        <fieldset>
+          <legend><h1>Pensión <a href="Detalles.html#pension">justificación</a></h1></legend>
+            <input type="radio" name="Pension" id="alojamiento"><label for="alojamiento">Alojamiento</label>
+            <br><br>
+            <input type="radio" name="Pension" id="desayuno"><label for="desayuno">Desayuno</label>
+            <br><br>
+            <input type="radio" name="Pension" id="media"><label for="media">Media</label>
+            <br><br>
+            <input type="radio" name="Pension" id="completa"><label for="completa">Completa</label>
+            <br><br>
+        </fieldset>
+        <fieldset>
+          <legend><h1>Comentarios y Sugerencias <a href="Detalles.html#comentarios">justificación</a></h1></legend>
+            <textarea name="Comentarios" rows="3" cols="40" id="comentarios_sugerencias" placeholder="Escriba su comentario..." ></textarea>
+            <br>
+            <label for="contacto">E-mail contacto: </label><input type="text" name="Contacto" id="contacto"><a href="Detalles.html#e_mail">justificación</a>
+            <br><br>
+            <input type="checkbox" name="Politica" id="política"><label for="política">Acepto política de privacidad</label><a 	   href="Detalles.html#politica_privacidad">justificación</a>
+            <br><br>
+        </fieldset>
+        <fieldset>
+          <legend></legend>                
+            <input type="reset" value="Limpiar">
+            <a href="Detalles.html#limpiar"><center>justificación</center></a>   
+            <br>
+            <input type="submit" id="btn" value="Enviar">
+            <a href="Detalles.html#enviar"><center>justificación</center></center></a> 
+            <br> 
+        </fieldset>
+      </form>
+    </div>
+  </BODY>
+
+</HTML>
